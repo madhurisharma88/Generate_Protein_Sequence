@@ -1,7 +1,6 @@
-**Generate Protein Sequences**
+####Generate Protein Sequences####
 
-Utitlity Class for Generator and Discriminator Function
-"""
+##Utitlity Class for Generator and Discriminator Function####
 
 import torch
 import torch.nn as nn
@@ -63,7 +62,7 @@ class Discriminator(nn.Module):
         validity = self.fc(flat_seq)
         return validity
 
-"""FID Score"""
+####FID Score####
 
 def calculate_fid_for_seq(real_seq, generated_seq, model_name='bert-base-uncased'):
     """
@@ -151,7 +150,7 @@ def calculate_fid_for_seq(real_seq, generated_seq, model_name='bert-base-uncased
     fid = diff.dot(diff) + np.trace(sigma_real + sigma_gen - 2 * covmean)
     return fid
 
-"""GAN Model"""
+####GAN Model####
 
 # Training loop
 num_epochs = 50
