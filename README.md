@@ -14,9 +14,12 @@ This project focuses on generating realistic protein sequences using deep genera
 - Optionally integrates structural features from UniProt.
 
 ## ** Evaluation Metrics**
-**Identity Score:** Sequence similarity with known proteins
+**Identity Score:** Sequence similarity with known proteins 
+
 **RMSD / TM-score:** Structural similarity (when 3D models are available)
+
 **FID Score:** Feature distribution alignment between real and synthetic sequences
+
 **Losses**: dloss, gloss, rloss, floss
 
 ## 📦 Requirements
