@@ -13,8 +13,17 @@ This project focuses on generating realistic protein sequences using deep genera
 - Evaluates generated sequences using metrics like identity, RMSD, TM-score, and FID.
 - Optionally integrates structural features from UniProt.
 
+## ** Evaluation Metrics**
+**Identity Score:** Sequence similarity with known proteins
+**RMSD / TM-score:** Structural similarity (when 3D models are available)
+**FID Score:** Feature distribution alignment between real and synthetic sequences
+**Losses**: dloss, gloss, rloss, floss
 
-
+## 📦 Requirements
+Python 3.8+
+PyTorch
+NumPy, Biopython
+Matplotlib, Seaborn
 
 **References**
 1. SidechainNet: An All-Atom Protein Structure Dataset for Machine Learning. J.E. King, D. Koes. Proteins: Structure, Function, and Bioinformatics (Vol. 89, Issue 11, pp. 1489–1496). Wiley. (2021).
